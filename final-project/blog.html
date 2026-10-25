@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog · Ben Dupuy</title>
+<meta name="description" content="Ben Dupuy — Sports Marketing & Data Analyst.">
+<link rel="stylesheet" href="css/organic.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav" aria-label="Main">
+    <a class="nav-brand" href="index.html">Ben Dupuy.</a>
+    <div class="nav-links">
+      <a href="about.html">About</a>
+      <a href="marketing.html">Marketing</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="blog.html" aria-current="page">Blog</a>
+      <a class="nav-cta" href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+<main>
+<div class="wrap">
+  <section class="section stack" style="gap:20px;padding-bottom:36px">
+    <h1>Film Room</h1>
+    <p class="lead">Notes on sports marketing, data and the game.</p>
+    <div class="filters" role="group" aria-label="Filter posts">
+      <button class="btn btn-secondary" aria-pressed="true">All</button><button class="btn btn-secondary" aria-pressed="false">Marketing</button><button class="btn btn-secondary" aria-pressed="false">Analytics</button><button class="btn btn-secondary" aria-pressed="false">Football</button>
+    </div>
+  </section>
+  <a class="card featured" href="#"><div class="ph">Featured image</div><div class="stack"><span class="card-kicker">Featured · 5 min read</span><h2>Post title</h2><p class="muted">One-line excerpt.</p></div></a>
+  <section class="section posts"><a class="post" href="#"><div class="ph">Image</div><strong>Post title</strong><span class="muted" style="font-size:14px">Date · Tag</span></a><a class="post" href="#"><div class="ph">Image</div><strong>Post title</strong><span class="muted" style="font-size:14px">Date · Tag</span></a><a class="post" href="#"><div class="ph">Image</div><strong>Post title</strong><span class="muted" style="font-size:14px">Date · Tag</span></a><a class="post" href="#"><div class="ph">Image</div><strong>Post title</strong><span class="muted" style="font-size:14px">Date · Tag</span></a><a class="post" href="#"><div class="ph">Image</div><strong>Post title</strong><span class="muted" style="font-size:14px">Date · Tag</span></a><a class="post" href="#"><div class="ph">Image</div><strong>Post title</strong><span class="muted" style="font-size:14px">Date · Tag</span></a></section>
+</div>
+<script>
+document.querySelectorAll('.filters button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filters button').forEach(x=>x.setAttribute('aria-pressed',x===b));}));
+</script>
+</main>
+</body>
+</html>

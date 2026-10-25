@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sports Analytics · Ben Dupuy</title>
+<meta name="description" content="Ben Dupuy — Sports Marketing & Data Analyst.">
+<link rel="stylesheet" href="css/organic.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav" aria-label="Main">
+    <a class="nav-brand" href="index.html">Ben Dupuy.</a>
+    <div class="nav-links">
+      <a href="about.html">About</a>
+      <a href="marketing.html">Marketing</a>
+      <a href="analytics.html" aria-current="page">Analytics</a>
+      <a href="blog.html">Blog</a>
+      <a class="nav-cta" href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+<main>
+<div class="wrap">
+  <div class="ph banner t-sage"><h1>Sports Analytics</h1></div>
+  <section class="section stack" style="gap:36px">
+    <nav class="project-tabs" aria-label="Projects"><a class="tag tag-accent" href="#lstm">LSTM Drive Predictor</a><a class="tag tag-outline" href="#tracking">Player Tracking</a><a class="tag tag-outline" href="#dashboards">Dashboards &amp; Code</a></nav>
+    <article id="lstm" class="stack" style="gap:28px">
+      <div class="project">
+        <div class="stack">
+          <h2>Predicting drive outcomes with an LSTM</h2>
+          <p class="lead">An LSTM neural network that predicts how offensive drives end (score, punt or turnover), trained on 5 seasons of NCAA play-by-play data.</p>
+          <a class="btn btn-secondary" href="#" style="align-self:flex-start">View on GitHub</a>
+        </div>
+<pre class="code">model = <span class="k">Sequential</span>([
+  <span class="k">LSTM</span>(64, input_shape=(plays, feats)),
+  <span class="k">Dense</span>(3, activation=<span class="s">"softmax"</span>)
+])</pre>
+      </div>
+      <div class="stats"><div class="stat"><b>59%</b><span>test accuracy</span></div><div class="stat"><b>13,487</b><span>drives</span></div><div class="stat"><b>3</b><span>outcome classes</span></div></div>
+      <div class="ph" style="aspect-ratio:21/9">Confusion matrix: score / punt / turnover</div>
+    </article>
+  </section>
+  <section id="tracking" class="tracking">
+    <div class="stack"><h2>Player Tracking Visualization</h2><p class="muted">Short description of the data and what the animation shows.</p></div>
+    <div class="ph"><img src="doodle-icons/png/black/xs-and-os-black.png" alt="">Animated play · ▶ replay</div>
+  </section>
+  <section id="dashboards" class="section stack">
+    <h2>Dashboards &amp; Code</h2>
+    <div class="ph" style="aspect-ratio:21/9">Dashboard screenshots</div>
+  </section>
+</div>
+</main>
+</body>
+</html>
