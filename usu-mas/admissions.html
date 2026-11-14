@@ -6,6 +6,7 @@
     <title>USU College of Magic and Sorcery - Admissions</title>
     <link rel="stylesheet" href="magic.css" />
     <link rel="icon" href="images/favicon.svg" />
+    <script src="magic.js" defer></script>
   </head>
   <body>
 
@@ -70,7 +71,7 @@
             counselor will follow up with details tailored to your interests.
           </p>
 
-          <form action="https://httpbin.org/post" method="post" target="_blank">
+          <form id="info-form" action="https://httpbin.org/post" method="post" target="_blank">
 
             <div class="field">
               <label for="full-name">Full name</label>
@@ -109,6 +110,7 @@
             </div>
 
             <button type="submit">Send My Request</button>
+            <p id="form-message" class="form-message" aria-live="polite" hidden></p>
           </form>
         </div>
 
