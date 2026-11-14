@@ -132,6 +132,7 @@ p { margin: 0; text-wrap: pretty; }
 .contact-form .input { background: var(--color-bg); font-size: 16px; min-height: 46px; }
 .contact-form textarea.input { border-radius: var(--radius-lg); min-height: 140px; padding: 14px; resize: vertical; }
 .contact-form .btn { min-height: 48px; font-size: 16px; }
+.form-message { margin: 0; padding: 14px 16px; border-radius: var(--radius-lg); background: var(--color-bg); border-left: 4px solid var(--color-accent-2); font-weight: 600; }
 
 @media (max-width: 860px) {
   .hero, .about-intro, .contact, .project, .tracking, .featured { grid-template-columns: 1fr; gap: 36px; }
